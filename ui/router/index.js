@@ -1,0 +1,21 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+import TranslationInput from '@/components/TranslationInput'
+import Hello from '@/components/Hello'
+// import App from '@/App'
+
+Vue.use(Router)
+
+export default new Router({
+    routes: [
+        {
+            path: '/',
+            name: 'TranslationInput',
+            component: TranslationInput
+        }, {
+            path: '/hello',
+            name: 'Hello',
+            component: Hello
+        }
+    ]
+})
